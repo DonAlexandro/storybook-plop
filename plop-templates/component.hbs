@@ -1,0 +1,7 @@
+import { FC, PropsWithChildren } from 'react';
+import Styled from './{{toLower name}}.styled';
+import { {{capitalize name}}Props } from './interface'
+
+export const {{capitalize name}}: FC<PropsWithChildren<{{capitalize name}}Props>> = (props) => {
+  return <Styled.{{capitalize name}} {...props}>Hi! I'm your new component!</Styled.{{capitalize name}}>;
+};

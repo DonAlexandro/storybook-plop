@@ -1,0 +1,25 @@
+import type { Meta, StoryObj } from '@storybook/react';
+import { {{capitalize name}} } from './{{capitalize name}}';
+
+const meta: Meta<typeof {{capitalize name}}> = {
+  component: {{capitalize name}},
+  tags: ['autodocs'],
+  {{#if figmaLink}}
+  parameters: {
+    design: {
+      type: 'figma',
+      url: '{{{figmaLink}}}'
+    }
+  }
+  {{/if}}
+};
+
+type Story = StoryObj<typeof {{capitalize name}}>;
+
+export const Default: Story = {
+  args: {
+    children: 'Hello World!',
+  },
+};
+
+export default meta;

@@ -1,0 +1,10 @@
+import { render, screen } from '@testing-library/react';
+import { {{capitalize name}} } from './{{capitalize name}}';
+
+describe('{{capitalize name}}', () => {
+  it('should be defined', () => {
+    render(<{{capitalize name}}/>)
+
+    expect(screen.getByText(`Hi! I'm your new component!`)).toBeInTheDocument()
+  })
+})
